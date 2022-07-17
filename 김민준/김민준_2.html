@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10406 김민준</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+   @keyframes animaion {
+    from{
+     margin-top: 150px;
+     opacity: 0;
+    }
+    to{
+     margin-top: 50px;
+     opacity: 1;
+    }
+   }
+   
+   body{
+    background-color: rgb(159, 147, 225);
+    user-select: none;
+   }
+   .button {
+    list-style: none;
+   }
+   .box {
+    list-style: none;
+   }
+   .button > a > li {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 200px;
+    font-size: 65px;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    line-height: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition-property: box-shadow, border-radius, transform;
+    transition-duration: 0.5s;
+    margin-left: 2vw;
+    margin-right: 2vw;
+   }
+
+   #button1 {
+    top: 250px;
+    left: 275px;
+    opacity: 0;
+    border: 5px solid green;
+    color: green;
+    box-shadow: 0 10px green;
+    margin-top: 100px;
+    animation: animaion 1s ease-out;
+    animation-fill-mode: forwards;
+   }
+   #button2 {
+    top: 250px;
+    left: 625px;
+    opacity: 0;
+    border: 5px solid green;
+    color: green;
+    box-shadow: 0 10px green;
+    margin-top: 100px;
+    animation: animaion 1s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+   }
+   #button3 {
+    top: 250px;
+    left: 975px;
+    opacity: 0;
+    border: 5px solid green;
+    color: green;
+    box-shadow: 0 10px green;
+    margin-top: 100px;
+    animation: animaion 1s ease-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+   }
+   #button1:hover {
+    box-shadow: 0px 0px;
+    transform: scale(1.1);
+   }
+   #button2:hover {
+    box-shadow: 0px 0px;
+    transform: scale(1.1);
+   }
+   #button3:hover {
+    box-shadow: 0px 0px;
+    transform: scale(1.1);
+   } 
+   .box > a > li{
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 40px;
+    width: 400px;
+    font-size: 70px;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition-property: box-shadow, border-radius, transform;
+    transition-duration: 0.5s;
+    margin-left: 2vw;
+    margin-right: 2vw;
+   }
+   #box1{
+    top: 50px;
+    left: 525px;
+    opacity: 0;
+    border: 5px solid rgb(48, 6, 238);
+    color: rgb(48, 6, 238);
+    box-shadow: 0 10px rgb(48, 6, 238);
+    margin-top: 100px;
+    animation: animaion 1s ease-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+   }
+   #box1:hover {
+    box-shadow: 0px 0px;
+    box-shadow: 0, 0;
+    transform: translate(0, 10px);
+   }
+   .bt{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+   }
+  </style>
+ </head>
+ <body>
+  <span class="bt"><a href="김민준_code2.html"><button>코드 보기</button></a> 10406 김민준</span>
+  <ul class="box">
+    <a><li id="box1">HCU 갓동 GIGA</li></a>
+  </ul>
+  <ul class="button">
+   <a href="https://school.use.go.kr/hcu-h/M01"><li id="button1">HCU</li></a>
+   <a href="https://giga-library.netlify.app/"><li id="button2">GIGA</li></a>
+   <a href="https://hcu-webzine.com/"><li id="button3">Webzine</li></a>
+  </ul>
+ </body>
+</html> 
