@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kr" style="background-color: skyblue;">
+<head>
+    <meta charset="UTF-8">
+
+    <title>10330 하석현</title>
+    
+    <style>
+        @keyframes moveUpDown {
+            from{
+                margin-top: 1%;
+            }
+            to{
+                margin-top: 41%;
+            }
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(90deg);
+            }
+        }
+            
+
+        .sp{
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        #d1{
+            left: 10%;
+            animation:
+            moveUpDown 3.5s infinite alternate-reverse,
+            rotate 1s infinite;
+        }
+        #d2{
+            margin-left: 45%;
+            animation: 
+            moveUpDown 3s infinite alternate-reverse,
+            rotate 2s infinite;
+        }
+        #d3{
+            right: 10%;
+            animation: 
+            moveUpDown 2.5s infinite alternate-reverse,
+            rotate 3s infinite;
+        }
+        #d1:visited{
+            background-color: red;
+        }
+        #d2:visited{
+            background-color: green;
+        }
+        #d3:visited{
+            background-color: blue;
+        }
+        .bt{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .bt2{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <span class="bt"><a href="하석현_code1.html"><button>코드 보기</button></a> 10330 하석현</span>
+    <span class="bt2"><a href="하석현_2.html"><button>다음</button></a></span>
+    <a href="1.html"><span class="sp" id="d1"></span></a>
+    <a href="2.html"><span class="sp" id="d2"></span></a>
+    <a href="main.html"><span class="sp" id="d3"></span></a>
+
+</body>
+</html>

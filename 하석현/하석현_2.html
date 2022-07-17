@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr" style="background-color: aqua;">
+<head>
+    <meta charset="UTF-8">
+    <title>10330 하석현</title>
+
+    <style>
+        @keyframes moveRight{
+            from{
+                left: 2%;
+            }
+            to{
+                left: 98%;
+            }
+        }
+        @keyframes moveUpDown {
+            from{
+                top: 2%;
+            } 11%{
+                top: 86%;
+            } 22%{
+                top: 25%;
+            } 33%{
+                top: 86%;
+            } 44%{
+                top: 40%;
+            } 55%{
+                top: 86%;
+            } 66%{
+                top: 60%;
+            } 77%{
+                top: 86%;
+            } 88%{
+                top: 70%;
+            } to{
+                top: 86%;
+            }
+        }
+        @keyframes scale{
+            from{
+                transform: scale(1, 1);
+            } to{
+                transform: scale(2, 2);
+            }
+        }
+        #rectanguler{
+            position: fixed;
+
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            opacity: 20%;
+            background-color: blue;
+
+            animation:
+            moveRight 10s linear infinite,
+            moveUpDown 10s ease-in-out infinite;
+
+        }
+        #rectanguler:hover{
+            animation: 
+            moveRight 10s linear infinite,
+            moveUpDown 10s ease-in-out infinite,
+            scale 0.5s;
+        }
+        .bt{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .bt2{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <span class="bt"><a href="하석현_code2.html"><button>코드 보기</button></a> 10330 하석현</span>
+    <span class="bt2"><a href="하석현_1.html"><button>이전</button></a>&nbsp;&nbsp;<a href="하석현_3.html"><button>다음</button></a></span>
+    <a href="main.html"><div id="rectanguler"></div></a>
+</body>
+</html>

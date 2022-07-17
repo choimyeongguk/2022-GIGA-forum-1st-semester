@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kr" style="background-color: pink;">
+<head>
+    <meta charset="UTF-8">
+
+    <title>10330 하석현</title>
+    
+    <style>
+        @keyframes moveUpDown {
+            from{
+                margin-top: 1%;
+            }
+            to{
+                margin-top: 41%;
+            }
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(90deg);
+            }
+        }
+            
+
+        .sp{
+            position: fixed;
+            left: 41%;
+            top: 41%;
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+
+
+        }
+        #d1{
+            animation: rotate 0.5s linear infinite;
+        }
+        #d2{
+            animation: rotate 1s linear infinite;
+        }
+        #d3{
+            animation: rotate 1.5s linear infinite;
+        }
+        #d4{
+            animation: rotate 2s linear infinite;
+        }
+        #d5{
+            animation: rotate 2.5s linear infinite;
+        }
+        .bt{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .bt2{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <span class="bt"><a href="하석현_code3.html"><button>코드 보기</button></a> 10330 하석현</span>
+    <span class="bt2"><a href="하석현_2.html"><button>이전</button></a></span>
+    <a href="main.html"><span class="sp" id="d1"></span></a>
+    <a href="main.html"><span class="sp" id="d2"></span></a>
+    <a href="main.html"><span class="sp" id="d3"></span></a>
+    <a href="main.html"><span class="sp" id="d4"></span></a>
+    <a href="main.html"><span class="sp" id="d5"></span></a>
+
+</body>
+</html>
