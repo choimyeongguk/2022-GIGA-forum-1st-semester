@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10608 김채형</title>
+    <title>Hello</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         body{
             user-select: none;
+            text-align: center;
+            background: linear-gradient(rgb(189, 209, 252), white);
+            background-size: 150% 150%;
         }
         div{
             font-size: 70px;
             font-family: 'Lobster', cursive;
-            text-align: center;
         }
         .hello{
             margin-top: 120px;
             margin-bottom: 30px;
         }
-        body{
-            background: linear-gradient(rgb(189, 209, 252), white);
-            background-size: 150% 150%;
+        .click{
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100px;
+            height: 70px;
+            padding-top: 25px;
+            font-size: 15px;
+            position: absolute;
+            z-index: 2;
+        }
+        img{
+            position: relative;
+            z-index: 1;
         }
         .bt{
             position: absolute;
@@ -34,5 +46,7 @@
     <span class="bt"><a href="김채형_code2.html"><button>코드 보기</button></a> 10608 김채형</span>
     <div class="hello">Hello!</div>
     <div><a href="김채형_3.html"><img src="hi.gif" alt="hi"></a></div>
+    <div class="click">Click me!!</div>
+    <img src="text_balloon.png" alt="text_balloon" width="100px" height="70px">
 </body>
 </html>

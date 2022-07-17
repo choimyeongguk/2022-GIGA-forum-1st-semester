@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10608 김채형</title>
+    <title>Hello, World</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+        @keyframes animation{
+            0%{
+                opacity: 1;
+                filter: hue-rotate(0deg);
+            }
+            25%{
+                opacity: 0.2;
+                filter: hue-rotate(-30deg);
+            }
+            100%{
+                opacity: 1;
+                filter: hue-rotate(0deg);
+            }
+        }
         body{
             background: radial-gradient(circle, white 20%, rgb(189, 209, 252));
             user-select: none;
@@ -22,14 +36,17 @@
             color: rgb(0, 0, 128);
         }
         .medium{
+            animation: animation 4s 1s linear infinite normal;
             font-size: 50px;
             color: rgb(64, 57, 196);
         }
         .small{
+            animation: animation 4s 0.5s linear infinite normal;
             font-size: 30px;
             color: rgb(113, 82, 248);
         }
         .tiny{
+            animation: animation 4s 0s linear infinite normal;
             font-size: 15px;
             color: rgb(153, 150, 211);
         }
